@@ -1,0 +1,51 @@
+.main-class{
+    padding: 10px;
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    align-items: start;
+    
+}
+h1{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+
+}
+form{
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgb(240, 175, 175);
+    width: 100%;
+}
+input{
+    box-sizing: border-box;
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+outline: none;
+border: none;
+}
+table{
+    background-color: cadetblue;
+    width: 100%;
+    padding: 8px;
+    border-radius:5px;
+    color: white;
+    border-collapse: collapse;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(69, 69, 235);
+    color: white;
+    cursor: pointer;
+}
+table tr td,table tr th{
+    border: 1px solid black;
+    padding: 8px;
+}
