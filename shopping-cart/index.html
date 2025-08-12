@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Jenifar Jui Shop</h1>
+        <div class="card">
+            <div class="card-img">
+                
+                <img src="https://as2.ftcdn.net/v2/jpg/02/51/04/61/1000_F_251046116_N335u2TPevEM9kRmVb4gF5AJkjQ7nFr0.jpg"  class="img" alt="">
+            </div>
+            <div class="card-title">
+                <h3>Chicken burger</h3>
+                <h3>size : 6</h3>
+                <h3 class="price">price : $<span id="price">100</span></h3>
+                <svg onclick="increament('count','price','item')" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-label="plus">
+                    <path d="M8 1.6a.8.8 0 0 1 .8.8v4.8h4.8a.8.8 0 1 1 0 1.6H8.8v4.8a.8.8 0 1 1-1.6 0V8.8H2.4a.8.8 0 1 1 0-1.6h4.8V2.4A.8.8 0 0 1 8 1.6z" fill="currentColor"/>
+                  </svg>
+                  <input type="button" id="count" value="0">
+                  <svg onclick="decreament('count','price','item')" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" role="img">
+                    <line x1="3" y1="10" x2="17" y2="10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  </svg>
+                  <span class="item">Your item $<span id="item">00</span></span>                 
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-img">
+                
+                <img src="https://as2.ftcdn.net/v2/jpg/02/51/04/61/1000_F_251046116_N335u2TPevEM9kRmVb4gF5AJkjQ7nFr0.jpg"  class="img" alt="">
+            </div>
+            <div class="card-title">
+                <h3>Chicken burger</h3>
+                <h3>size : 6</h3>
+                <h3 class="price">price : $ <span id="price1">700</span> </h3>
+                <svg onclick="increament('count1','price1','item1')" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-label="plus">
+                    <path d="M8 1.6a.8.8 0 0 1 .8.8v4.8h4.8a.8.8 0 1 1 0 1.6H8.8v4.8a.8.8 0 1 1-1.6 0V8.8H2.4a.8.8 0 1 1 0-1.6h4.8V2.4A.8.8 0 0 1 8 1.6z" fill="currentColor"/>
+                  </svg>
+                  <input type="button" id="count1" value="0">
+                  <svg onclick="decreament('count1','price1','item1')" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" role="img">
+                    <line x1="3" y1="10" x2="17" y2="10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  </svg>
+                  <span class="item">Your item $ <span id="item1">00</span> </span>                 
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="fixed">
+        <h1 class="total">The Total Ammount Of</h1>
+        <h2>Product Ammount : $<span id="pr_amount">00</span></h2>
+        <h2>Delivery charge : $<span id="charge">20</span></h2>
+        --------------------------------------------------
+        <h2> Total Product Ammount : $<span id="total_tk">00</span></h2>
+       <div class="kupon" id="kupon_div">      
+          <h4 class="kupon">kupon code 50tk less</h4>
+          <h5 class="code">Your Code Is:Jui</h5>
+          <input class="code" id="kupon_input" type="text" placeholder="your kupon code. ..">
+          <button id="applybtn" class="btn">Apply</button>
+       </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
