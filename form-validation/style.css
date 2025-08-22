@@ -7,7 +7,18 @@
     padding: 10px;
     background-color: rgb(205, 205, 242);
     width: 500px;
+    margin: auto;
+    margin-top: 60px;
 
+}
+h1{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid;
+    margin: 0;
+    margin-bottom: 40px;
+    background-color: rgb(24, 131, 68);
+    color: white;
 }
 .formdesign{
     padding: 5px;
@@ -38,5 +49,6 @@
     border: none;
     cursor: pointer;
     margin-top: 20px;
+    margin-left: 10px;
 
 }
