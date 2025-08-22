@@ -1,0 +1,42 @@
+*body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 10px;
+    background-color: rgb(205, 205, 242);
+    width: 500px;
+
+}
+.formdesign{
+    padding: 5px;
+}
+.formdesign label{
+    font-size: 19px;
+}
+.formdesign input{
+    padding: 8px;
+    margin: 5px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+.formerror{
+    font-size: 14px;
+    color: red;
+    margin-left: 10px;
+}
+.button{
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+
+}

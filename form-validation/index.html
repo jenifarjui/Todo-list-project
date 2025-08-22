@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Form Validation</h1>
+    <form action="/index.php" method="post" name="myForm" onsubmit="return validateForm()">
+        <div class="formdesign" id="name">
+            <label for="name">Name :</label>
+            <input type="text" name="fname" >
+            <span class="formerror"></span>
+        </div>
+        <div class="formdesign" id="email">
+            <label for="email">Email :</label>
+            <input type="email" name="femail" >
+            <span class="formerror"></span>
+        </div>
+        <div class="formdesign" id="phone">
+            <label for="phone">Phone :</label>
+            <input type="number" name="fphone" ><span class="formerror"></span>
+        </div>
+        <div class="formdesign" id="password">
+            <label for="password">Password :</label>
+            <input type="password" name="fpassword" ><span class="formerror"></span>
+        </div>
+        <div class="formdesign" id="cpassword">
+            <label for="cpassword">C password :</label>
+            <input type="password" name="fcpassword" ><span class="formerror"></span>
+        </div>
+
+       <button type="submit" class="button" name="btn" id="btn" value="">Submit</button>
+  
+
+    </form>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
