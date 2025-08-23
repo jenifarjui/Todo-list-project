@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+}
+.cotainer{
+    background: rgb(249, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.modal-wrapper {
+    position: fixed;
+    left: 10px;
+    top: 60px;
+    background-color: rgba(40, 39, 39, 0.43);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease-in-out;
+}
+.modal-container{
+    background: white;
+    width: 500px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    /* annimation */
+    transform: translateY(-100%);
+    transition: all .4s ease-in-out;
+}
+h2{
+    padding: 10px;
+}
+p{
+padding: 10px;
+line-height: 1.6;
+}
+.modal-container button.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    outline: none;
+    font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.modal-container button.close:hover{
+    color: blueviolet;
+}
+.btn{
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+.active{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+.modal-wrapper.active .modal-container{
+    transform: translateY(0px);
+}
+
