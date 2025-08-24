@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    padding: 10px;
+}
+.title{
+    color: #fff;
+    background-color: rgb(216, 40, 40);
+    padding: 20px;
+    transition: background 1s;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.title:hover{
+    background-color: rgb(234, 118, 118);
+}
+.according-content{
+    background-color: rgb(243, 228, 210);
+    padding: 7px;
+    display: none;
+}
+.according-items{
+    margin-bottom: 10px;
+}
+.according-items.active .according-content{
+    display: block;
+}
