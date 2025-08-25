@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    background-color: chocolate;
+    color: white;
+}
+
+.container {
+    background-color: rgba(105, 105, 105, 0.492);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-right: 30px;
+
+}
+
+a,
+li {
+    margin: 0;
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.drop-down {
+    height: auto;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(105, 105, 105, 0.695);
+    position: absolute;
+    /* padding: 10px; */
+    top: 27px;
+    align-items: start;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    gap: 0px;
+    padding-right: 0;
+    border-radius: 7px;
+
+}
+
+.drop-down li {
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    width: 100%;
+
+}
+.drop-down li:hover{
+   background-color:rgb(24, 172, 58);
+}
+
+.container ul li:hover>.drop-down {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.6s;
+}
+
+
+.hero {
+    background-color: rgb(180, 144, 214);
+    padding: 20px;
+}
+
+.hero-content {
+    text-align: center;
+    height: 100vh;
+    margin-top: 10px;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  
+}
+p{
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+button {
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(24, 172, 58);
+    color: white;
+    cursor: pointer;
+  
+}
