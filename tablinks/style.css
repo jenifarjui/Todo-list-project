@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+  background-color: rgb(243, 230, 214);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+.tab{
+  display: flex;
+  background-color: rgb(127, 9, 238);
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+
+}
+.tab button{
+    padding: 10px;
+    border: none;
+    background-color: rgb(233, 14, 14);
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.tab button:hover{
+    background-color: rgb(12, 11, 11);
+}
+.tab button.active{
+    background-color: rgb(12, 11, 11);
+}
+.tabContent{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black ;
+    border-top: none;
+    width: 500px;
+    margin-top: 20px;
+    display: none;
+    animation: fadeEffect 0.5s;
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
