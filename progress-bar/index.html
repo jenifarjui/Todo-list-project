@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Progress Bar</title>
+</head>
+<body>
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+                    
+                </div>
+            </div>
+        </div>
+        <svg width="160" height="160" viewBox="0 0 160 160">
+            <defs>
+              <!-- Gradient definition -->
+              <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#00ff00"/>   <!-- Bright green -->
+                <stop offset="100%" stop-color="#006400"/> <!-- Dark green -->
+              </linearGradient>
+            </defs>
+          
+            <!-- Outer gradient circle -->
+            <circle cx="80" cy="80" r="70" 
+                    stroke="url(#grad)" stroke-width="20" fill="none"/>
+          
+            <!-- Inner circle -->
+            <circle cx="80" cy="80" r="60" fill="white"/>
+          
+            <!-- Text -->
+            <text x="80" y="85" 
+                  text-anchor="middle" 
+                  font-size="20" font-weight="600" 
+                  fill="#555"></text>
+          </svg>
+          
+          
+          
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
