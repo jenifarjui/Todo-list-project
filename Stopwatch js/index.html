@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="clock">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="6" x2="12" y2="12"></line>
+        <line x1="12" y1="12" x2="16" y2="14"></line>
+      </svg>
+  <h1>Stopwatch  </h1>
+</div> 
+    
+      
+    <div class="stopwatch">
+        <h1 id="displayTime">00:00:00</h1>
+        <div class="btn">
+          <!-- Start -->
+          <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="Start" onclick="watchStart()">
+          <!-- Pause -->
+          <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="Pause" onclick="watchPause()">
+          <!-- Reset -->
+          <img src="https://cdn-icons-png.flaticon.com/512/61/61112.png" alt="Reset" onclick="watchReset()">
+        </div>
+      </div>
+      
+
+    <script src="script.js"></script>
+</body>
+</html>

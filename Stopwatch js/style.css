@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clock{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    background-color: rgb(247, 247, 223);
+}
+/* Stopwatch container */
+.stopwatch {
+    width: 340px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    
+    /* Background image */
+    background: url("https://images.unsplash.com/photo-1503264116251-35a269479413") no-repeat center/cover;
+    
+    /* Overlay effect for readability */
+    position: relative;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    overflow: hidden;
+  }
+  
+  .stopwatch::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5); /* dark overlay */
+    border-radius: 20px;
+    z-index: 0;
+  }
+  
+  /* Time display */
+  .stopwatch h1 {
+    font-size: 46px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Button container */
+  .stopwatch .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Button images */
+  .stopwatch .btn img {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .stopwatch .btn img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.3);
+  }
+  
+  

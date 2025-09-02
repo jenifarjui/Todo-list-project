@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Search bar and Filter table</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Search bar  with filter</h2>
+        <div class="table">
+            <div class="search-container">
+                <input type="text" id="searchInput" onkeyup="searchFun()" placeholder="🔍 Search by name, position, or email...">
+              </div>
+            
+              <table id="myTable">
+                <thead>
+                  <tr class="header">
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                  <tr>
+                    <td>01</td>
+                    <td>Jenifar Jui</td>
+                    <td>CEO</td>
+                    <td>jenifar@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>John Smith</td>
+                    <td>Developer</td>
+                    <td>john@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>Sara Khan</td>
+                    <td>Designer</td>
+                    <td>sara@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>Michael Lee</td>
+                    <td>Manager</td>
+                    <td>michael@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>Michael Lee</td>
+                    <td>Manager</td>
+                    <td>michael@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>06</td>
+                    <td>Michael Lee</td>
+                    <td>Manager</td>
+                    <td>michael@example.com</td>
+                  </tr>
+                </tbody>
+              </table>           
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
